@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root{
+    --cor1 :#39F5D6;
+    --cor2 :#218F7D;
+    --cor3: #afffd793;
+    --cor4: #38D6F5;
+
+}
+
+
+#bloco-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.39);
+    border-radius: 0px 6px 5px 0px;
+    min-width: 270px;
+    margin: 0px 4px;
+}
+#aba-pesquisa{
+    font-size: 1.6em;
+    min-width: 200px;
+    width: 80%;
+    height: 45px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--cor3);
+    min-width: 280px;
+    min-width: 280px;
+    width: 100%;
+    max-width: 500px;
+}
+div.produtos{
+    display: flex;
+    background-color: #38F597;
+    height: 120px;
+    min-width: 130px;
+    width: 100%;
+    margin: 15px 5px;
+}
+#filtro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor2);
+    height: 100%;
+    width: 80px;
+    color: black;
+    font-size: 1.8em;
+}
+img{
+    width: 160px;
+    height: 100%;
+    background-color: white;
+}
+@media screen and (min-width:720px){
+    #aba-pesquisa{
+        width: 700px;
+    }
+    #filtro{
+        width: 120px;
+    }
+    section{
+        max-width: 700px;
+        justify-content: space-between;
+    }
+    div.produtos{
+        flex-direction: column;
+        width: 40%;
+        height: 280px;
+        margin: 15px 20px;
+    }
+    img{
+        width: 100%;
+    }
+    .legenda-produto{
+        height: 100px;
+    }
+    
+}
+@media screen and (min-width:1050px){
+    div.produtos{
+        height: 400px;
+    }
+    .legenda-produto{
+        height: 180px;
+    }
+    h1{
+        font-size: 4em;
+    }
+    section{
+        max-width: 1000px;
+    }
+}
