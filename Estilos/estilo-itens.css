@@ -16,13 +16,26 @@
     border: 2px solid rgba(0, 0, 0, 0.39);
     border-radius: 0px 6px 5px 0px;
     min-width: 270px;
+    width: 90%;
     margin: 0px 4px;
+}
+h1{
+    font-family: "Alegreya", serif;
+    font-size: 4em;
+    text-shadow: 5px 7px 9px rgba(0, 0, 0, 0.178);
 }
 #aba-pesquisa{
     font-size: 1.6em;
     min-width: 200px;
-    width: 80%;
+    width: 90%;
     height: 45px;
+    
+}
+#aba-pesquisa:hover{
+    box-shadow: 4px 7px 9px #afffd771;
+}
+#filtro:hover{
+    box-shadow: 4px 7px 9px #afffd771;
 }
 section{
     display: flex;
@@ -32,15 +45,19 @@ section{
     min-width: 280px;
     min-width: 280px;
     width: 100%;
-    max-width: 500px;
+    box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.137);
 }
 div.produtos{
     display: flex;
     background-color: #38F597;
     height: 120px;
     min-width: 130px;
-    width: 100%;
+    width: 90%;
     margin: 15px 5px;
+}
+div.produtos:hover{
+    transition-duration: 1s;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.137);
 }
 #filtro{
     display: flex;
@@ -48,7 +65,7 @@ div.produtos{
     justify-content: center;
     background-color: var(--cor2);
     height: 100%;
-    width: 80px;
+    width: 60px;
     color: black;
     font-size: 1.8em;
 }
@@ -57,9 +74,18 @@ img{
     height: 100%;
     background-color: white;
 }
-@media screen and (min-width:720px){
+@media screen and (min-width:620px){
+    h1{
+        font-family: "Alegreya", serif;
+        font-size: 5em;
+        text-shadow: 5px 7px 9px rgba(0, 0, 0, 0.178);
+    }
+    #bloco-pesquisa{
+        max-width: 700px;
+    }
     #aba-pesquisa{
-        width: 700px;
+        width: 100%;
+        
     }
     #filtro{
         width: 120px;
@@ -83,6 +109,9 @@ img{
     
 }
 @media screen and (min-width:1050px){
+    #bloco-pesquisa{
+        max-width: 1000px;
+    }
     div.produtos{
         height: 400px;
     }
