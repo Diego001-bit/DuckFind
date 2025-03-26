@@ -37,13 +37,14 @@ h1{
 #filtro:hover{
     box-shadow: 4px 7px 9px #afffd771;
 }
-section{
+#container-produto{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: var(--cor3);
     min-width: 280px;
     min-width: 280px;
+    min-height: 100vh;
     width: 100%;
     box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.137);
 }
@@ -69,7 +70,7 @@ div.produtos:hover{
     color: black;
     font-size: 1.8em;
 }
-img{
+.imagem-item{
     width: 160px;
     height: 100%;
     background-color: white;
@@ -100,7 +101,7 @@ img{
         height: 280px;
         margin: 15px 20px;
     }
-    img{
+    .imagem-item{
         width: 100%;
     }
     .legenda-produto{
