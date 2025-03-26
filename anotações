@@ -1,3 +1,98 @@
 
 Aba de pesquisa:
 https://youtu.be/dI8wiEs8cag?si=yrCK26Xh3cPHT1Iy&t=1363
+
+
+<body>
+    <div>
+        <label for="genero">Filtrar por Gênero:</label>
+        <select id="genero">
+            <option value="">Todos</option>
+            <option value="Femea">Fêmea</option>
+            <option value="Macho">Macho</option>
+        </select>
+
+        <label for="marca">Filtrar por Marca:</label>
+        <select id="marca">
+            <option value="">Todas</option>
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+        </select>
+
+        <button id="filter-btn">Filtrar</button>
+    </div>
+
+    <div id="catalogo"></div>
+
+    <script>
+        const catalogo = [
+            {
+                link: "Teste-link",
+                imagem: "teste-imagem",
+                item: "nome-produto",
+                tipo: "roupinha-teste",
+                marca: "nike",
+                valor: "200-teste",
+                genero: "Femea",
+                descriçãobasica: "lalalala",
+                id: "1"
+            },
+            {
+                link: "Outro-link",
+                imagem: "outra-imagem",
+                item: "outro-produto",
+                tipo: "roupinha-teste",
+                marca: "adidas",
+                valor: "300-teste",
+                genero: "Macho",
+                descriçãobasica: "lelelele",
+                id: "2"
+            },
+            {
+                link: "Link-extra",
+                imagem: "imagem-extra",
+                item: "produto-extra",
+                tipo: "roupinha-teste",
+                marca: "nike",
+                valor: "250-teste",
+                genero: "Macho",
+                descriçãobasica: "wow",
+                id: "3"
+            }
+        ];
+
+        const catalogoContainer = document.getElementById('catalogo');
+
+        function renderizarCatalogo(itens) {
+            catalogoContainer.innerHTML = '';
+            itens.forEach(produto => {
+                catalogoContainer.innerHTML += `
+                    <div class="produto">
+                        <h2>${produto.item}</h2>
+                        <p>${produto.descriçãobasica}</p>
+                        <p><strong>Marca:</strong> ${produto.marca}</p>
+                        <p><strong>Gênero:</strong> ${produto.genero}</p>
+                        <p><strong>Valor:</strong> ${produto.valor}</p>
+                    </div>
+                `;
+            });
+        }
+
+        // Renderiza todos os itens inicialmente
+        renderizarCatalogo(catalogo);
+
+        // Filtrar por múltiplos critérios
+        document.getElementById('filter-btn').addEventListener('click', () => {
+            const generoSelecionado = document.getElementById('genero').value;
+            const marcaSelecionada = document.getElementById('marca').value;
+
+            const filtrados = catalogo.filter(produto => {
+                return (!generoSelecionado || produto.genero === generoSelecionado) &&
+                       (!marcaSelecionada || produto.marca === marcaSelecionada);
+            });
+
+            renderizarCatalogo(filtrados);
+        });
+    </script>
+</body>
+</html>
