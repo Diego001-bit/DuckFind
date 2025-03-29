@@ -39,16 +39,15 @@ h1{
 }
 #container-produto{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+
+    flex-direction: column;
     background-color: var(--cor3);
-    min-width: 280px;
     min-width: 280px;
     min-height: 100vh;
     width: 100%;
     box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.137);
 }
-div.produtos{
+.produtos{
     display: flex;
     background-color: #38F597;
     height: 120px;
@@ -76,6 +75,10 @@ div.produtos:hover{
     background-color: white;
 }
 @media screen and (min-width:620px){
+    #container-produto{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
     h1{
         font-family: "Alegreya", serif;
         font-size: 6em;
@@ -105,6 +108,7 @@ div.produtos:hover{
         width: 100%;
     }
     .legenda-produto{
+        background-color: #38F597;
         height: 100px;
     }
     
