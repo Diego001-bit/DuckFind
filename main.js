@@ -1,5 +1,5 @@
-import { renderizarCatalogo } from "./src/cartaoProduto";
+import { renderizarcatalogo } from "./src/cartaoproduto";
 
 
 
-renderizarCatalogo();
+renderizarcatalogo();

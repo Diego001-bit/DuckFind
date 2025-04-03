@@ -1,6 +1,6 @@
 import{ catalogo } from "./lista-produtos";
 
-export function renderizarCatalogo(){
+export function renderizarcatalogo(){
     for(const produtoCatalogo of catalogo){
         const cartaoProduto =         
         `<div class="produtos" id="card-produto-${produtoCatalogo.id}">
