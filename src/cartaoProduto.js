@@ -7,8 +7,10 @@ export function renderizarCatalogo(){
         <img src="${produtoCatalogo.imagem}" class="imagem-item">
         <div class="legenda-produto">
         <p class='productList'>${produtoCatalogo.item}</p>
-        <p class='text-sm'>${produtoCatalogo.marca}</p>
+        <p class='text-sm'>${produtoCatalogo.material}</p>
         <p class='text-sm'>${produtoCatalogo.valor}</p>
+        <p class='text-sm'>${produtoCatalogo.Cores}</p>
+        <a href="${produtoCatalogo.link}" target="_blank"><div class="botao-afiliado"><span class="material-symbols-outlined">shopping_cart </span></div></a>
         </div>
         </div>`;
         document.getElementById('container-produto').innerHTML += cartaoProduto;

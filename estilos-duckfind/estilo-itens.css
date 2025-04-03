@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
 
 :root{
     --cor1 :#39F5D6;
@@ -39,7 +40,9 @@ h1{
 }
 #container-produto{
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     background-color: var(--cor3);
     min-width: 280px;
@@ -49,15 +52,29 @@ h1{
 }
 .produtos{
     display: flex;
+    justify-content: space-between;
     background-color: #38F597;
-    height: 120px;
     min-width: 130px;
     width: 90%;
     margin: 15px 5px;
+    border-radius: 7px;
+
+}
+p{
+    font-size: 0.88em;
+    margin: 4px;
+    font-family: "Neuton", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 div.produtos:hover{
     transition-duration: 1s;
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.137);
+}
+div.legenda-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #filtro{
     display: flex;
@@ -70,19 +87,44 @@ div.produtos:hover{
     font-size: 1.8em;
 }
 .imagem-item{
-    width: 160px;
-    height: 100%;
+    width: 60%;
     background-color: white;
 }
-@media screen and (min-width:620px){
+.botao-afiliado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    background-color: #218f7d;
+    border-radius: 0px 0px 4px 0px;
+    text-decoration: none;
+}
+a{
+    font-style: none;
+    text-decoration: none;
+    color: #38D6F5;
+}
+a:hover{
+    color: white;
+    transition-duration: 0.79s;
+}
+.botao-afiliado .material-symbols-outlined{
+    font-size: 2em;
+}
+@media screen and (min-width:520px){
     #container-produto{
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: start;
     }
     h1{
         font-family: "Alegreya", serif;
         font-size: 6em;
         text-shadow: 5px 7px 9px rgba(0, 0, 0, 0.178);
+    }
+    p{
+        font-size: 1.2em;
     }
     #bloco-pesquisa{
         max-width: 700px;
@@ -101,7 +143,6 @@ div.produtos:hover{
     div.produtos{
         flex-direction: column;
         width: 40%;
-        height: 280px;
         margin: 15px 20px;
     }
     .imagem-item{
@@ -109,16 +150,18 @@ div.produtos:hover{
     }
     .legenda-produto{
         background-color: #38F597;
-        height: 100px;
     }
-    
+    .botao-afiliado{
+        font-size: 1.4em;
+        border-radius: 0px 0px 4px 4px;
+    }
 }
 @media screen and (min-width:1050px){
     #bloco-pesquisa{
         max-width: 1000px;
     }
     div.produtos{
-        height: 400px;
+        height: 100%;
     }
     .legenda-produto{
         height: 180px;
@@ -126,7 +169,13 @@ div.produtos:hover{
     h1{
         font-size: 8em;
     }
+    p{
+        font-size: 1.5em;
+    }
     section{
         max-width: 1000px;
+    }
+    .botao-afiliado{
+        border-radius: 0px 0px 4px 4px;
     }
 }
