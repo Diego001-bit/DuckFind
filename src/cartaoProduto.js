@@ -1,4 +1,4 @@
-import { catalogo } from "./lista-produtos";
+import{ catalogo } from "./lista-produtos";
 
 export function renderizarCatalogo(){
     for(const produtoCatalogo of catalogo){
