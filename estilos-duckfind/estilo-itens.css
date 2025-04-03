@@ -122,6 +122,12 @@ a:hover{
 .botao-afiliado .material-symbols-outlined{
     font-size: 2em;
 }
+@media screen and (min-width:420px){
+    h1{
+        font-size: 4.6em;
+    }
+}
+
 @media screen and (min-width:520px){
     
     #container-produto{
