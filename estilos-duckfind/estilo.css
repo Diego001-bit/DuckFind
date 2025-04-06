@@ -149,8 +149,8 @@ h1{
 
 }
 p{
-    font-size: 0.88em;
-    margin: 4px;
+    font-size: 0.78em;
+    margin: 2px;
     font-family: "Neuton", serif;
     font-weight: 500;
     font-style: normal;
@@ -167,6 +167,7 @@ div.legenda-produto{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 #filtro{
     display: flex;
@@ -202,11 +203,17 @@ a:hover{
     transition-duration: 0.79s;
 }
 .botao-afiliado .material-symbols-outlined{
-    font-size: 2em;
+    font-size: 1.6em;
 }
 @media screen and (min-width:420px){
+    div.legenda-produto{
+        min-height: 250px;
+    }
     h1{
         font-size: 4.6em;
+    }
+    .botao-afiliado .material-symbols-outlined{
+        font-size: 3em;
     }
 }
 
@@ -267,7 +274,7 @@ a:hover{
         height: 100%;
     }
     .legenda-produto{
-        height: 180px;
+        height: 80px;
     }
     h1{
         font-size: 8em;
