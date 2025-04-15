@@ -109,7 +109,18 @@ export const catalogo = [
                                                 Cores:'Rosa-Preto-Marrom-Creme-Cinza-Azul-Vermelho',
                                                 descrição:'Este arranhador é projetado para garantir horas de entretenimento para o seu gato. O formato quadrado oferece estabilidade, enquanto os brinquedos artesanais, incluindo pompons com penas, garantem atração instantânea para o seu pet.',
                                                 id:'0011',
-                                                }
+                                                },{
+                                                    link:'https://s.shopee.com.br/5pur7cPUlt',
+                                                    imagem:'https://down-br.img.susercontent.com/file/br-11134207-7qukw-lgoiftegsofq5b.webp',
+                                                    Nome:'Brinquedo mordedor Pelucia Para Cachorro Pato Big Duck Grande Com 3 Apitos',
+                                                    Tipo:'Brinquedo',
+                                                    Material:'Poliéster e Algodão',
+                                                    valor:'68',
+                                                    Cores:'Amarelo',
+                                                    descrição:'Os pets gostam muito de interagir com seus donos e esse mordedor de pelúcia irá deixar suas brincadeiras muito mais divertidas além de suprir a necessidade de exercícios diários do seu amiguinho.',
+                                                    id:'0012',
+                                                    }
+                                                    
                                                 
                                             
                                         
